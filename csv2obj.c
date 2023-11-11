@@ -17,7 +17,6 @@ typedef int bool;
 #define FILETYPE_CSV		1
 #define FILETYPE_PGM		2
 
-
 char** str_split(char* a_str, const char a_delim)
 {
     char** result    = 0;
@@ -290,8 +289,8 @@ int main(int argc, char** argv) {
 	
 	int whatToDraw = DRAW_NONE;
 	whatToDraw = DRAW_MESH;
-	//whatToDraw = DRAW_3D_FULLBARS;
-	// whatToDraw = DRAW_3D_CUBES;
+	whatToDraw = DRAW_3D_FULLBARS;
+	//whatToDraw = DRAW_3D_CUBES;
 	
 	if (whatToDraw==DRAW_MESH) {
 		// Write all vertexes
